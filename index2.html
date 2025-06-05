@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhay Parmar | ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-bg: #fdfdfd;
+      --primary-text: #2d2d2d;
+      --accent: #0e76a8;
+      --muted-bg: #ffffff;
+      --card-bg: #f4f4f8;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--primary-text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #dfefff, #c6e2ff);
+      color: var(--primary-text);
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h3 {
+      color: #3b3b3b;
+      margin-bottom: 0.3rem;
+    }
+
+    p, a {
+      font-size: 1.05rem;
+      color: var(--primary-text);
+    }
+
+    .project {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project:hover {
+      transform: translateY(-3px);
+    }
+
+    .skills, .contact {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f6fa;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abhay Parmar</h1>
+    <p>Machine Learning Engineer | AI Enthusiast | Portfolio</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Machine Learning developer focused on building intelligent solutions with clean data and smarter models. This portfolio highlights my journey in ML and Deep Learning.
+    </p>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>1. Customer Churn Prediction</h3>
+      <p>Built a model using Logistic Regression and Random Forest to predict churn. Achieved 85% accuracy. Designed for telecom industry use-cases.</p>
+    </div>
+
+    <div class="project">
+      <h3>2. Wine Quality Prediction</h3>
+      <p>Regression model predicting wine quality based on physicochemical inputs. Random Forest model provided the lowest MAE and best R² score.</p>
+    </div>
+
+    <div class="project">
+      <h3>3. Parkinson's Disease Detection</h3>
+      <p>Used voice feature data to build a classifier detecting Parkinson’s Disease. Models used: SVM, Logistic Regression. Accuracy > 90%.</p>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <p>Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, TensorFlow, Keras, Machine Learning, Deep Learning, Data Preprocessing</p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: abhayparmar647@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/abhayparmar2612" target="_blank">github.com/yourgithub</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abhay Parmar. Created with passion & precision.</p>
+  </footer>
+</body>
+</html>
