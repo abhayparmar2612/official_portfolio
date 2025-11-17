@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <style>
+    /* === Base Styles === */
+    :root {
+      --bg: #f4f4f9;
+      --text: #222;
+      --accent: #3461ff;
+      --card: #fff;
+      --muted: #666;
+      --font-sans: 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Georgia', serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: bold;
+      color: var(--text);
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-top: 4rem;
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about, .contact {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      color: #888;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Abhay Parmar</h1>
+      <p class="subtitle">Deep Learning Engineer | AI Enthusiast </p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="new/assets/AB Resume New.pdf" target="_blank">Resume</a>
+      </nav>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about">
+        <h2>About Me</h2>
+        <p>
+I’m Abhay Parmar, a Machine Learning enthusiast focused on building clean, impactful, and deployment-ready ML projects. I work across the full pipeline — from data preprocessing and visualization to model building and deployment.
+
+I’ve built projects like Customer Churn Prediction, Fraud Detection, Wine Quality Prediction, Parkinson’s Detection, and a Movie Recommendation System. I love solving problems, learning fast, and creating ML solutions that actually work in the real world.        </p>
+        <p>
+          Currently exploring multi-modal learning and building open-source tools to simplify model debugging and visualization.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>1. Customer Churn Prediction</h3>
+      <p>Built a model using Logistic Regression and Random Forest to predict churn. Achieved 85% accuracy. Designed for telecom industry use-cases.</p>
+          <a href="https://churn-prediction-joatwodae39mforafzm74d.streamlit.app" target="_blank">Click Me →</a>
+        </div>
+        <div class="project-card">
+          <h3>Early Diabetes Risk Prediction</h3>
+          <p>A machine learning model that predicts diabetes risk using health features like glucose level, BMI, age, and blood pressure. I performed data analysis, built a classification model, and created a simple interface for users to check their risk.</p>
+          <a href="https://github.com/yourname/skin-lesion" target="_blank">Click Me →</a>
+        </div>
+        <div class="project-card">
+          <h3>Movie Revenue Prediction</h3>
+          <p>A regression model that predicts a movie’s box-office revenue using features like budget, cast popularity, genre, and marketing factors. I performed data analysis, built a predictive model, and identified the key elements that influence a film’s commercial success.</p>
+          <a href="https://github.com/yourname/experiment-tracker" target="_blank">GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:abhayparmar2612@gmail.com">abhayparmar2612@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourname" target="_blank">MyLinkdinProfile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/abhayparmar2612" target="_blank">MyGitHubAccount</a></p>
+        <p><strong>Phone:</strong>+91 9327162685</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
